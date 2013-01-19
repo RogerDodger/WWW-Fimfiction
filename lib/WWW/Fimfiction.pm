@@ -10,7 +10,7 @@ use XML::Twig;
 use Carp 'croak';
 use JSON 'decode_json';
 
-our $VERSION = 'v0.3.2';
+our $VERSION = 'v0.3.5';
 
 =head1 NAME
 
@@ -116,7 +116,7 @@ sub login {
 		croak 'Invalid username';
 	}
 	else {
-		croak 'Error: $code';
+		croak "Bad credentials";
 	}
 }
 
@@ -245,6 +245,8 @@ sub delete_chapter {
 }
 
 =head2 get_story
+
+Args: ($id)
 
 Returns a hash ref of story metadata.
 
