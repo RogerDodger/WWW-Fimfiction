@@ -10,7 +10,7 @@ use XML::Twig;
 use Carp 'croak';
 use JSON 'decode_json';
 
-our $VERSION = 'v0.3.1';
+our $VERSION = 'v0.3.2';
 
 =head1 NAME
 
